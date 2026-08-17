@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+
+# Large generated files
+activations/*.pkl
+outputs/*
+!outputs/.gitkeep
+!activations/.gitkeep
+*.pdf
+*.svg
