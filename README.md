@@ -94,7 +94,7 @@ Taken together, these effects test whether the **within-task relational organiza
 
 ### 2. Procrustes analysis: is the relational shape preserved across tasks?
 
-For two configurations, \(X\) and \(Y\), Procrustes analysis finds the translation, rotation or reflection, and uniform scaling that best align them:
+For two configurations, $X$ and $Y$, Procrustes analysis finds the translation, rotation or reflection, and uniform scaling that best align them:
 
 ```math
 M^2
@@ -107,7 +107,7 @@ sXR + \mathbf{1}t^\top - Y
 R^\top R = I
 ```
 
-The resulting \(M^2\) is the **Procrustes disparity**. A small disparity means that two tasks may place number representations in different locations and orientations while preserving nearly the same relational configuration.
+The resulting $M^2$ is the **Procrustes disparity**. A small disparity means that two tasks may place number representations in different locations and orientations while preserving nearly the same relational configuration.
 
 The key intuition is that Procrustes deliberately factors out coordinate choices. It does not ask whether two tasks use the same axes or occupy the same region of representation space. Instead, it asks whether the **shape formed by the numerical concepts relative to one another** is preserved.
 
@@ -121,7 +121,7 @@ Let
 V_A = [v_{A,1}, \ldots, v_{A,k}]
 ```
 
-contain the top-\(k\) principal directions of task \(A\), and let \(X_B\) denote the centered representations of task \(B\). We measure how much of the variance in \(B\) can be captured using the principal subspace learned from \(A\):
+contain the top-$k$ principal directions of task $A$, and let $X_B$ denote the centered representations of task $B$. We measure how much of the variance in $B$ can be captured using the principal subspace learned from $A$:
 
 ```math
 \mathrm{Overlap}(A \leftarrow B)
@@ -153,7 +153,7 @@ A low overlap means that the dominant directions used by one task explain relati
 
 ### 4. SVCCA: can distinct task representations be linearly aligned?
 
-Singular Vector Canonical Correlation Analysis (SVCCA) first reduces each representation with PCA and then performs Canonical Correlation Analysis (CCA). For PCA-reduced representations \(Z_A\) and \(Z_B\), CCA finds pairs of linear projections that maximize their correlation:
+Singular Vector Canonical Correlation Analysis (SVCCA) first reduces each representation with PCA and then performs Canonical Correlation Analysis (CCA). For PCA-reduced representations $Z_A$ and $Z_B$, CCA finds pairs of linear projections that maximize their correlation:
 
 ```math
 \rho_i
